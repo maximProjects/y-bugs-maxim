@@ -29,4 +29,30 @@ class ExtMessage extends Message
         return $arrMessages;              
     }//getMessage
     
+    /* By Maxim */
+
+    public function getMessages($lng,$cond=array()){
+        $sql = "SELECT t1.id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix";
+
+        $param = array();
+        
+        if(!empty($cond['search_label'])){
+             $sql .= " AND t2.text LIKE :label";
+             $param[':label'] = "%{$cond['search_label']}%";
+
+        }
+        
+        //add order
+        $sql .= " ORDER BY t1.message_id DESC"; 
+        
+        
+        $param[':prefix'] = $lng;
+        $con = $this->dbConnection;        
+        $retData = $con->createCommand($sql)->queryAll(true,$param);
+        return $retData;        
+    }//getMessages
 }

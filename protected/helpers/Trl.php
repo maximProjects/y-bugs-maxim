@@ -22,13 +22,44 @@ class Trl
     }
         
     private function __clone(){}
+
+    public function getLabel($labelName)
+    {
+        if(array_key_exists($labelName,$this->_arrLabels)){
+            if(empty($this->_arrLabels[$labelName])){
+                return '!'.$labelName;    
+            }else{
+                return $this->_arrLabels[$labelName];    
+            } 
+            
+        }else{
+            return '*'.$labelName;  
+        }
+    }//getLabel
     
+    
+    public function getMsg($message){
+        
+        if(array_key_exists($message,$this->_arrMessages)){
+            if(array_key_exists($message,$this->_arrMessages)){
+                return '!'.$message;    
+            }else{
+                return $this->_arrMessages[$message];    
+            }
+           
+        }else{
+            return '*'.$message;  
+        }
+    }//getMessage
+
+
+    /*
     public function getLabel($labelName)
     {
         if(array_key_exists($labelName,$this->_arrLabels)){
             return $this->_arrLabels[$labelName];
         }else{
-            return $labelName;  
+            return "NN ".$labelName;  
         }
     }//getLabel
     
@@ -41,7 +72,7 @@ class Trl
             return $message;  
         }
     }//getMessage
- 
+ */
     
 }
 

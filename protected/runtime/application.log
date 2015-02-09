@@ -177,3 +177,923 @@ Stack trace:
 REQUEST_URI=/issues/delres/15
 HTTP_REFERER=http://ybugs.local/en/issues/getissue/23
 ---
+2015/02/09 15:27:34 [error] [php] Cannot modify header information - headers already sent by (output started at C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php:80) (C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(91): LanguagesController->redirect()
+#1 unknown(0): LanguagesController->actionSave()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/save/67
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (91)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/09 15:38:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "messages".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('messages')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 15:42:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "messages/index".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('messages/index')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 15:43:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "messages".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(270): CController->missingAction('messages')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 15:43:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "messages".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(270): CController->missingAction('messages')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 16:29:32 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): CController->renderPartial('trlMes_list', Array, true)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(172): CController->render('trlMes_list', Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(180): LanguagesController->actionListMes()
+#3 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 16:29:34 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): CController->renderPartial('trlMes_list', Array, true)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(172): CController->render('trlMes_list', Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(180): LanguagesController->actionListMes()
+#3 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 16:29:39 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): CController->renderPartial('trlMes_list', Array, true)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(172): CController->render('trlMes_list', Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(180): LanguagesController->actionListMes()
+#3 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 16:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "ru".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(270): CController->missingAction('ru')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('ru')
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/ru')
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ru/languages/ru/languages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/messages
+---
+2015/02/09 16:59:11 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.id,t2.label,t1.value, t2.id AS label_id
+            FROM message_trl t1
+            JOIN labels t2 ON t1.label_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 16:59:11 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. Выполнявшийся SQL-запрос: SELECT t1.id,t2.label,t1.value, t2.id AS label_id
+            FROM message_trl t1
+            JOIN labels t2 ON t1.label_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 16:59:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. The SQL statement executed was: SELECT t1.id,t2.label,t1.value, t2.id AS label_id
+            FROM message_trl t1
+            JOIN labels t2 ON t1.label_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(84): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:03:18 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.id,t2.label,t1.value, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.message_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (85)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:03:18 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. Выполнявшийся SQL-запрос: SELECT t1.id,t2.label,t1.value, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.message_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (85)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:03:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. The SQL statement executed was: SELECT t1.id,t2.label,t1.value, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.message_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(85): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:05:08 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.message_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (85)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:05:08 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. Выполнявшийся SQL-запрос: SELECT t1.id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.message_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (85)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:05:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. The SQL statement executed was: SELECT t1.id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.message_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(85): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:05:10 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.message_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (85)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:05:10 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. Выполнявшийся SQL-запрос: SELECT t1.id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.message_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (85)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:05:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. The SQL statement executed was: SELECT t1.id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.message_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(85): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:21:29 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:21:29 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. Выполнявшийся SQL-запрос: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:21:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. The SQL statement executed was: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(84): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:27:51 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (83)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:27:51 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t3.prefix. Выполнявшийся SQL-запрос: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (83)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:27:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t3.prefix. The SQL statement executed was: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(83): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:27:52 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (83)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:27:52 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t3.prefix. Выполнявшийся SQL-запрос: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (83)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:27:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t3.prefix. The SQL statement executed was: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(83): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:33:24 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:33:24 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. Выполнявшийся SQL-запрос: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:33:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. The SQL statement executed was: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(84): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:33:26 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:33:26 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. Выполнявшийся SQL-запрос: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:33:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. The SQL statement executed was: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(84): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:33:26 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:33:26 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. Выполнявшийся SQL-запрос: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:33:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: mesage_trl. The SQL statement executed was: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM mesage_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(84): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:34:20 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:34:20 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. Выполнявшийся SQL-запрос: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (84)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:34:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. The SQL statement executed was: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id
+          WHERE t3.prefix = :prefix ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(84): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:35:17 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id  ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (83)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:35:17 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. Выполнявшийся SQL-запрос: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id  ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (83)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:35:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. The SQL statement executed was: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id  ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(83): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 17:35:19 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id  ORDER BY t1.id DESC
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (83)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:35:19 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. Выполнявшийся SQL-запрос: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id  ORDER BY t1.id DESC.
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php (83)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (169)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (181)
+2015/02/09 17:35:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such column: t1.id. The SQL statement executed was: SELECT t1.message_id,t2.text,t1.translation, t2.id AS message_id
+            FROM message_trl t1
+            JOIN message t2 ON t1.message_id = t2.id
+            JOIN languages t3 ON t1.language_id = t3.id  ORDER BY t1.id DESC' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\models\ext\ExtLanguages.php(83): CDbCommand->queryAll(true, Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(169): ExtLanguages->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(181): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages
+---
+2015/02/09 18:13:13 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "MessageTrl.value".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\ar\CActiveRecord.php(161): CComponent->__set('value', '\xD0\x9D\xD0\xB5 \xD0\xB8\xD0\xB7\xD0\xB2\xD0\xB5\xD1\x81...')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(148): CActiveRecord->__set('value', '\xD0\x9D\xD0\xB5 \xD0\xB8\xD0\xB7\xD0\xB2\xD0\xB5\xD1\x81...')
+#2 [internal function]: LanguagesController->actionSaveMes('11')
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('saveMes')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/saveM...')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ru/languages/saveMes/11
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/messages
+---
+2015/02/09 18:18:41 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "MessageTrl.value".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\ar\CActiveRecord.php(161): CComponent->__set('value', '')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(148): CActiveRecord->__set('value', '')
+#2 [internal function]: LanguagesController->actionSaveMes('11')
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('saveMes')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/saveM...')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ru/languages/saveMes/11
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/messages
+---
+2015/02/09 18:20:57 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "MessageTrl.value".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\ar\CActiveRecord.php(161): CComponent->__set('value', '\xD0\x9D\xD0\xB5 \xD0\xB8\xD0\xB7\xD0\xB2\xD0\xB5\xD1\x81...')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(148): CActiveRecord->__set('value', '\xD0\x9D\xD0\xB5 \xD0\xB8\xD0\xB7\xD0\xB2\xD0\xB5\xD1\x81...')
+#2 [internal function]: LanguagesController->actionSaveMes('11')
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('saveMes')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/saveM...')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ru/languages/saveMes/11
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/messages
+---
+2015/02/09 18:41:15 [error] [exception.CException] exception 'CException' with message 'В классе ExtLanguages и его поведениях не найден метод или замыкание с именем "getMessagess".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getMessagess', Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(203): CActiveRecord->__call('getMessagess', Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(203): ExtLanguages->getMessagess('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionSearchMes()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('searchMes')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/searc...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ru/languages/searchMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/messages
+---
+2015/02/09 19:09:18 [error] [php] include(ExtMessages.php): failed to open stream: No such file or directory (C:\OpenServer\domains\yii-bugs-maxim.local\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(202): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#2 unknown(0): LanguagesController->actionMessages()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (202)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/09 19:09:45 [error] [exception.CException] exception 'CException' with message 'В классе ExtMessage и его поведениях не найден метод или замыкание с именем "getMessages".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getMessages', Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(202): CActiveRecord->__call('getMessages', Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(202): ExtMessage->getMessages('ru', Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ru/languages/messages
+---
+2015/02/09 19:10:37 [error] [php] Illegal string offset 'id' (C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php:51)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(869): LanguagesController->renderFile()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): LanguagesController->renderPartial()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(206): LanguagesController->render()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 unknown(0): LanguagesController->actionMessages()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+2015/02/09 19:10:47 [error] [php] Illegal string offset 'id' (C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php:51)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(869): LanguagesController->renderFile()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): LanguagesController->renderPartial()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(206): LanguagesController->render()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 unknown(0): LanguagesController->actionMessages()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+2015/02/09 19:11:21 [error] [php] Illegal string offset 'id' (C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php:51)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(869): LanguagesController->renderFile()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): LanguagesController->renderPartial()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(206): LanguagesController->render()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 unknown(0): LanguagesController->actionMessages()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+2015/02/09 19:11:22 [error] [php] Illegal string offset 'id' (C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php:51)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(869): LanguagesController->renderFile()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): LanguagesController->renderPartial()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(206): LanguagesController->render()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 unknown(0): LanguagesController->actionMessages()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+2015/02/09 19:11:26 [error] [php] Illegal string offset 'id' (C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php:51)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(869): LanguagesController->renderFile()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): LanguagesController->renderPartial()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(206): LanguagesController->render()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 unknown(0): LanguagesController->actionMessages()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+2015/02/09 19:12:52 [error] [php] Illegal string offset 'message_id' (C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php:51)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(869): LanguagesController->renderFile()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): LanguagesController->renderPartial()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(206): LanguagesController->render()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 unknown(0): LanguagesController->actionMessages()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+2015/02/09 19:12:54 [error] [php] Illegal string offset 'message_id' (C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php:51)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(869): LanguagesController->renderFile()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): LanguagesController->renderPartial()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(206): LanguagesController->render()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 unknown(0): LanguagesController->actionMessages()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+2015/02/09 19:12:56 [error] [php] Illegal string offset 'message_id' (C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php:51)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(869): LanguagesController->renderFile()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): LanguagesController->renderPartial()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(206): LanguagesController->render()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 unknown(0): LanguagesController->actionMessages()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+2015/02/09 19:12:58 [error] [php] Illegal string offset 'message_id' (C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php:51)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(869): LanguagesController->renderFile()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(782): LanguagesController->renderPartial()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(206): LanguagesController->render()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(232): LanguagesController->actionListMes()
+#4 unknown(0): LanguagesController->actionMessages()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/ru/languages/messages
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
