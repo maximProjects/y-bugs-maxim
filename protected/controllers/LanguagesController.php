@@ -382,7 +382,7 @@ class LanguagesController extends Controller
         $this->render('lang_list',array('langs' => $langs, 'lang_prefix' => $lang_prefix));
     }
   
-
+  /* by Maxim End */
 
     /* T R A N S L A T I O N S */
 

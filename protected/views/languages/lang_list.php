@@ -1,4 +1,8 @@
-<div class="col-md-10 content-holder">
+ <?php
+$cs = Yii::app()->clientScript;
+$cs->registerScriptFile(Yii::app()->baseUrl.'/js/trans.js',CClientScript::POS_END);
+?> 
+<div class="col-md-10 content-holder" id="translation">
     <div class="inner-holder">
     	<div class="tr-header clearfix">
         	<div class="col-md-6"><h2><?php echo Trl::t()->getLabel('Languages')?></h2></div>
