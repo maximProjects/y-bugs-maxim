@@ -44,7 +44,37 @@ $(document).ready(function(e) {
      });
      
       
-      
+
+/* Messages translation events by Maxim */
+
+    $('#translation').on('change','#lng_sel_mes',function(){
+         if($(this).val() == ''){
+            return false;
+         }   
+         selectMes(this);
+    });
+
+    //$('a.add-mes').click(function(e){});
+    
+    
+     $('#translation').on('click','a.add-mes',function(){
+         var prefix = $(this).data('prefix');
+         loadModalMes(prefix);
+        
+     });
+
+
+      $('#translation').on('click','a.mes-delete',function(){
+
+         var prefix = $(this).data('prefix');
+         var labelId = $(this).data('id');
+         var labelName = $(this).data('label');
+         
+         loadDeleteModalMes(prefix,labelId,labelName);
+        
+     });
+
+/* Messages translation events End  by Maxim */      
 	
 });
 
@@ -79,5 +109,25 @@ function fakeInput(obj,search){
 }
 
 
+/* Messages translation functions by Maxim */
 
+function loadModalMes(prefix){
+    $('.modal-dialog').load('/'+ prefix +'/languages/AddMes');
+    $('.modal').modal('show');
 
+}//loadModal Add Message
+
+function loadDeleteModalMes(prefix,labelId,labelName){
+     $('.modal-dialog').load('/'+ prefix +'/languages/DelMes',{id : labelId, name: labelName});
+     $('.modal').modal('show')
+}//loadDeleteModal
+
+function selectMes(obj){    
+    lng = $(obj).val();
+    prefix = $(obj).data('prefix');
+    search_val = $('#search_label').val();  
+    
+    $(".table-holder").load('/'+ prefix +'/languages/listMes',{lng : lng, search_val : search_val});
+}//select
+
+/* Messages translation functions End  by Maxim */

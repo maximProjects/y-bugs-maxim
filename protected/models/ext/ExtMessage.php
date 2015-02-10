@@ -31,7 +31,7 @@ class ExtMessage extends Message
     
     /* By Maxim */
 
-    public function getMessages($lng,$cond=array()){
+    public function getMessagesArr($lng,$cond=array()){
         $sql = "SELECT t1.id,t2.text,t1.translation, t2.id AS message_id
             FROM message_trl t1
             JOIN message t2 ON t1.message_id = t2.id
@@ -54,5 +54,42 @@ class ExtMessage extends Message
         $con = $this->dbConnection;        
         $retData = $con->createCommand($sql)->queryAll(true,$param);
         return $retData;        
-    }//getMessages
+    }//getMessages array
+
+    public function addMessage($label,$arrLng){
+        
+       $sql = "INSERT INTO message ('text')
+        VALUES (:label)";
+        
+        $sql_param[':label'] = $label;
+        
+        $con = $this->dbConnection;
+        $con->createCommand($sql)->execute($sql_param);
+        $labelId = $con->getLastInsertID('message');
+        
+        $sql = "INSERT INTO message_trl ('message_id', 'language_id', 'translation') VALUES ";
+        foreach($arrLng as $key => $lng){           
+            if($key == 0){
+                $sql .= "($labelId, {$lng['id']}, '')";    
+            }else{
+                 $sql .= ",($labelId, {$lng['id']}, '')"; 
+            }
+            
+        }
+        
+        $con->createCommand($sql)->execute();
+        $labelTrl[] = $con->getLastInsertID('message_trl');
+        /*
+        foreach($arrLng as $lng){
+           
+            $sql = "INSERT INTO labels_trl ('label_id', 'language_id', 'value') VALUES ";
+            $sql .= "($labelId, {$lng['id']}, ' ')";
+            
+            $con->createCommand($sql)->execute();
+            $labelTrl[] = $con->getLastInsertID('labels_trl');
+        }
+        */
+        
+        return true;
+    }
 }

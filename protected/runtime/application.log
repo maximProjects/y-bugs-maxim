@@ -1097,3 +1097,310 @@ REQUEST_URI=/ru/languages/messages
 in C:\OpenServer\domains\yii-bugs-maxim.local\protected\views\languages\trlMes_list.php (51)
 in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (206)
 in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (232)
+2015/02/10 10:33:18 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(190): CController->renderPartial('_trlMes_list', Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(235): LanguagesController->actionListMes()
+#2 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ru/languages/messages/AddMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 10:33:22 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(190): CController->renderPartial('_trlMes_list', Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(235): LanguagesController->actionListMes()
+#2 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ru/languages/messages/AddMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 10:34:01 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(190): CController->renderPartial('_trlMes_list', Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(235): LanguagesController->actionListMes()
+#2 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ru/languages/messages/AddMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 10:34:04 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(190): CController->renderPartial('_trlMes_list', Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(235): LanguagesController->actionListMes()
+#2 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ru/languages/messages/AddMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 10:34:45 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(189): CController->renderPartial('_trlMes_list', Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(234): LanguagesController->actionListMes()
+#2 [internal function]: LanguagesController->actionMessages(NULL, NULL)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('messages')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/messa...')
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ru/languages/messages/AddMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 12:07:17 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(212): CController->renderPartial('_trlMes_list', Array)
+#1 [internal function]: LanguagesController->actionListMes(NULL, NULL)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('listMes')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/listM...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ru/languages/listMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/messages
+---
+2015/02/10 12:07:22 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(212): CController->renderPartial('_trlMes_list', Array)
+#1 [internal function]: LanguagesController->actionListMes(NULL, NULL)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('listMes')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/listM...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ru/languages/listMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/messages
+---
+2015/02/10 12:07:50 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(212): CController->renderPartial('_trlMes_list', Array)
+#1 [internal function]: LanguagesController->actionListMes(NULL, NULL)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('listMes')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/listM...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ru/languages/listMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/messages
+---
+2015/02/10 12:07:57 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(212): CController->renderPartial('_trlMes_list', Array)
+#1 [internal function]: LanguagesController->actionListMes(NULL, NULL)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('listMes')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/listM...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ru/languages/listMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 12:08:00 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(212): CController->renderPartial('_trlMes_list', Array)
+#1 [internal function]: LanguagesController->actionListMes(NULL, NULL)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('listMes')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/listM...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ru/languages/listMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 12:08:03 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(212): CController->renderPartial('_trlMes_list', Array)
+#1 [internal function]: LanguagesController->actionListMes(NULL, NULL)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('listMes')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/listM...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ru/languages/listMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 12:09:09 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(212): CController->renderPartial('_trlMes_list', Array)
+#1 [internal function]: LanguagesController->actionListMes(NULL, NULL)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('listMes')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/listM...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ru/languages/listMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 12:09:16 [error] [exception.CException] exception 'CException' with message 'Контроллер LanguagesController не может найти представление "_trlMes_list".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(212): CController->renderPartial('_trlMes_list', Array)
+#1 [internal function]: LanguagesController->actionListMes(NULL, NULL)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LanguagesController), Object(ReflectionMethod), Array)
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('listMes')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/listM...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ru/languages/listMes
+HTTP_REFERER=http://yii-bugs-maxim.local/ru/languages/searchMes
+---
+2015/02/10 13:24:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "LangList/index".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('LangList/index')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/lt/LangList
+HTTP_REFERER=http://yii-bugs-maxim.local/lt/languages/messages
+---
+2015/02/10 13:35:05 [error] [php] Missing argument 2 for CHtml::listData(), called in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php on line 379 and defined (C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\helpers\CHtml.php:2073)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/lt/languages/LangList
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (379)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/10 13:36:14 [error] [php] Missing argument 3 for CHtml::listData(), called in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php on line 379 and defined (C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\helpers\CHtml.php:2073)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/lt/languages/LangList
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (379)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/10 13:38:26 [error] [php] call_user_func() expects parameter 1 to be a valid callback, array must have exactly two members (C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\helpers\CHtml.php:2143)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(379): listData()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionLangList()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/lt/languages/LangList
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (379)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/10 13:45:56 [error] [exception.CException] exception 'CException' with message 'Languages ir jo elgsenos neturi metodo ar uždarinio „getAllLang“.' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getAllLang', Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(380): CActiveRecord->__call('getAllLang', Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(380): Languages->getAllLang()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionLangList()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('LangList')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/LangL...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/lt/languages/LangList
+HTTP_REFERER=http://yii-bugs-maxim.local/lt/languages/messages
+---
+2015/02/10 13:46:03 [error] [exception.CException] exception 'CException' with message 'Languages ir jo elgsenos neturi metodo ar uždarinio „getAllLang“.' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getAllLang', Array)
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(380): CActiveRecord->__call('getAllLang', Array)
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(380): Languages->getAllLang()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionLangList()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): CController->run('LangList')
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('languages/LangL...')
+#9 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/lt/languages/LangList
+HTTP_REFERER=http://yii-bugs-maxim.local/lt/languages/messages
+---

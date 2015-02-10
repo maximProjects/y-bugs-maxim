@@ -137,24 +137,49 @@ class LanguagesController extends Controller
 
     /* MESSAGES TRANSLATE */ 
 
-    /*
-    public function actionAddLabel(){
+  
+    public function actionAddMes(){
         $lang_prefix = Yii::app()->language;
         $request = Yii::app()->request;
         
         if($request->isAjaxRequest){
-            $retData = $this->renderPartial('_add_label_modal',array('lang_prefix' =>$lang_prefix));
+
+            $retData = $this->renderPartial('_add_message_modal',array('lang_prefix' =>$lang_prefix));
             echo $retData;
+            
         }else{
             
-            $label = $request->getPost('label_name');
+            $label = trim($request->getPost('label_name'));
             $arrLng = ExtLanguages::model()->getAllLang();
-            ExtMessages::model()->addLabel($label,$arrLng);
+            ExtMessage::model()->addMessage($label,$arrLng);
             
             $this->redirect(array('listMes')); 
         }
     }
-    */
+  
+    public function actionDelMes($id = null){
+        $lang_prefix = Yii::app()->language;
+        $request = Yii::app()->request;
+        
+         if($request->isAjaxRequest){
+            $id = $request->getPost('id');
+            $name = $request->getPost('name');
+            
+            $retData = $this->renderPartial('_delete_message_modal',array('lang_prefix' =>$lang_prefix,
+                        'id'=>$id,'label_name' => $name));
+            echo $retData;
+            exit();
+         }else{
+            $objMes = Message::model()->findByPk($id);
+
+            $objMes->delete();
+
+            //ExtLabels::model()->deleteLabel($id);
+            
+            $this->redirect(array('listMes'));
+         }
+        
+    }
 
     public function actionSaveMes($id = null){
         $request = Yii::app()->request;
@@ -181,7 +206,7 @@ class LanguagesController extends Controller
             $select_lng = $request->getPost('lng');
             $search_label = $request->getPost('search_val');
             
-            $arrLabel = ExtLanguages::model()->getLabels($select_lng,array('search_label' => $search_label));
+            $arrLabel = ExtMessage::model()->getMessagesArr($select_lng,array('search_label' => $search_label));
             $retData = $this->renderPartial('_trlMes_list',array('arrLabel' => $arrLabel,
                     'arrSelect' => $arrSelect,'lang_prefix' => $lang_prefix,'select_lng' => $select_lng,
                     'search_val' => $search_label)); 
@@ -199,7 +224,7 @@ class LanguagesController extends Controller
                $curr_lng = $lang_prefix; 
             }
             
-            $arrLabel = ExtMessage::model()->getMessages($curr_lng, array('search_label' => $search));
+            $arrLabel = ExtMessage::model()->getMessagesArr($curr_lng, array('search_label' => $search));
 
             $this->render('trlMes_list',array('arrLabel' => $arrLabel,
                     'arrSelect' => $arrSelect,'lang_prefix' => $lang_prefix,'select_lng' => $curr_lng,
@@ -219,7 +244,7 @@ class LanguagesController extends Controller
         $select_lng = $request->getPost('sel_lng');
         $search_label = $request->getPost('serch_label');        
         
-        $arrLabel = ExtLanguages::model()->getMessages($select_lng,array('search_label' => $search_label));
+        $arrLabel = ExtMessage::model()->getMessagesArr($select_lng,array('search_label' => $search_label));
         
         $this->render('trlMes_list',array('arrLabel' => $arrLabel,
                     'arrSelect' => $arrSelect,'lang_prefix' => $lang_prefix,'select_lng' => $select_lng,
@@ -348,7 +373,14 @@ class LanguagesController extends Controller
         $this->redirect(Yii::app()->createUrl('/languages/list'));
     }
     
-    
+    /* by Maxim */
+
+    public function actionLangList()
+    {
+        $lang_prefix = Yii::app()->language;
+        $langs = ExtLanguages::model()->getAllLang();
+        $this->render('lang_list',array('langs' => $langs, 'lang_prefix' => $lang_prefix));
+    }
   
 
 
