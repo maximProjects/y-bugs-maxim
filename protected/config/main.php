@@ -35,6 +35,17 @@ return array(
 
 	// application components
 	'components'=>array(
+
+       'Smtpmail'=>array(
+            'class'=>'application.extensions.smtpmail.PHPMailer',
+            'Host'=>"smtp.gmail.com",
+            'Username'=>'maximmks@gmail.com',
+            'Password'=>'maximear001',
+            'Mailer'=>'smtp',
+            'Port'=>587,
+            'SMTPAuth'=>true,
+            'SMTPSecure' => 'tls',
+        ),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
