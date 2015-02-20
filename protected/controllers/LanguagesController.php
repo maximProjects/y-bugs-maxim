@@ -92,6 +92,7 @@ class LanguagesController extends Controller
     
     
     public function actionAddLabel(){
+        
         $lang_prefix = Yii::app()->language;
         $request = Yii::app()->request;
         
@@ -106,6 +107,7 @@ class LanguagesController extends Controller
             
             $this->redirect(array('list')); 
         }
+
     }
     
     
@@ -135,6 +137,23 @@ class LanguagesController extends Controller
         
     }
 
+    public function actionUniqueCeckLabel(){
+        $label = $_POST['label'];
+        if($user = Labels::model()->exists('label=:label',array('label'=>$label)))
+        {
+            $arrJson = array();
+            $arrJson['status'] = "error";
+            $arrJson['err_txt'] = Trl::t()->getMsg("Duplicate error");; 
+            echo json_encode($arrJson);
+        }
+        else
+        {
+            $arrJson['status'] = "success";
+            echo json_encode($arrJson);
+        }
+
+
+    }
     /* MESSAGES TRANSLATE */ 
 
   
@@ -256,6 +275,25 @@ class LanguagesController extends Controller
     {
         $this->actionListMes();
     }
+
+    public function actionUniqueCeckMessage(){
+        $label = $_POST['label'];
+        
+        if($user = Message::model()->exists('text=:label',array('label'=>$label)))
+        {
+            $arrJson = array();
+            $arrJson['status'] = "error";
+            $arrJson['err_txt'] = Trl::t()->getMsg("Duplicate error");; 
+            echo json_encode($arrJson);
+        }
+        else
+        {
+            $arrJson['status'] = "success";
+            echo json_encode($arrJson);
+        }
+        
+    }
+    
     /* L A N G U A G E S */
 
     /**

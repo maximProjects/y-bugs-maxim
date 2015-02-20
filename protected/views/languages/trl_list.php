@@ -2,7 +2,6 @@
 $cs = Yii::app()->clientScript;
 $cs->registerScriptFile(Yii::app()->baseUrl.'/js/trans.js',CClientScript::POS_END);
 ?> 
- 
             <div class="col-md-10 content-holder" id="translation">
             <div class="inner-holder">
             	<div class="tr-header clearfix">

@@ -1891,3 +1891,182 @@ in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
 2015/02/12 16:15:35 [warning] [application] Failed to set unsafe attribute "priority" of "Issues".
 in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\IssuesController.php (93)
 in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/13 09:29:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/projects".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('en/projects')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/projects
+HTTP_REFERER=http://yii-bugs-maxim.local/en/projects
+---
+2015/02/13 09:29:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/projects".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('en/projects')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/projects
+HTTP_REFERER=http://yii-bugs-maxim.local/en/projects
+---
+2015/02/13 09:29:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/projects".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('en/projects')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/projects
+HTTP_REFERER=http://yii-bugs-maxim.local/en/projects
+---
+2015/02/13 10:05:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/languages".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('en/languages')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/languages
+HTTP_REFERER=http://yii-bugs-maxim.local/en/projects
+---
+2015/02/13 10:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/users".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('en/users')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/users
+HTTP_REFERER=http://yii-bugs-maxim.local/en/languages
+---
+2015/02/13 10:06:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/issues/list/2".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('en/issues/list/...')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/issues/list/2
+HTTP_REFERER=http://yii-bugs-maxim.local/users
+---
+2015/02/19 18:18:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/messages.js".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('js/messages.js')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/messages.js
+HTTP_REFERER=http://yii-bugs-maxim.local/en/languages/messages
+---
+2015/02/19 18:20:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined/languages/UniqueCeckMessage".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('undefined/langu...')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/undefined/languages/UniqueCeckMessage
+HTTP_REFERER=http://yii-bugs-maxim.local/en/languages/messages
+---
+2015/02/19 18:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "undefined/languages/UniqueCeckMessage".' in C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController('undefined/langu...')
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/undefined/languages/UniqueCeckMessage
+HTTP_REFERER=http://yii-bugs-maxim.local/en/languages/listMes
+---
+2015/02/19 18:25:47 [error] [php] include(Messages.php): failed to open stream: No such file or directory (C:\OpenServer\domains\yii-bugs-maxim.local\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(281): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionUniqueCeckMessage()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/en/languages/UniqueCeckMessage
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (281)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/19 18:25:56 [error] [php] include(Messages.php): failed to open stream: No such file or directory (C:\OpenServer\domains\yii-bugs-maxim.local\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(281): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionUniqueCeckMessage()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/en/languages/UniqueCeckMessage
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (281)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/19 18:27:44 [error] [php] include(Messages.php): failed to open stream: No such file or directory (C:\OpenServer\domains\yii-bugs-maxim.local\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(281): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionUniqueCeckMessage()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/en/languages/UniqueCeckMessage
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (281)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/19 18:28:26 [error] [php] include(Messages.php): failed to open stream: No such file or directory (C:\OpenServer\domains\yii-bugs-maxim.local\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(281): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionUniqueCeckMessage()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/en/languages/UniqueCeckMessage
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (281)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/19 18:29:02 [error] [php] include(Messages.php): failed to open stream: No such file or directory (C:\OpenServer\domains\yii-bugs-maxim.local\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(281): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionUniqueCeckMessage()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/en/languages/UniqueCeckMessage
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (281)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/20 09:38:13 [error] [php] include(Messages.php): failed to open stream: No such file or directory (C:\OpenServer\domains\yii-bugs-maxim.local\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(281): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionUniqueCeckMessage()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/en/languages/UniqueCeckMessage
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (281)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)
+2015/02/20 09:38:38 [error] [php] include(Messages.php): failed to open stream: No such file or directory (C:\OpenServer\domains\yii-bugs-maxim.local\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php(281): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\actions\CInlineAction.php(49): LanguagesController->actionUniqueCeckMessage()
+#2 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(286): LanguagesController->runAction()
+#4 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CController.php(265): LanguagesController->runActionWithFilters()
+#5 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(282): LanguagesController->run()
+#6 C:\OpenServer\domains\yii-bugs-maxim.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\yii-bugs-maxim.local\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\yii-bugs-maxim.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/en/languages/UniqueCeckMessage
+in C:\OpenServer\domains\yii-bugs-maxim.local\protected\controllers\LanguagesController.php (281)
+in C:\OpenServer\domains\yii-bugs-maxim.local\index.php (13)

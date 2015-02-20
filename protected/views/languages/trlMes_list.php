@@ -1,6 +1,6 @@
  <?php
 $cs = Yii::app()->clientScript;
-$cs->registerScriptFile(Yii::app()->baseUrl.'/js/trans.js',CClientScript::POS_END);
+$cs->registerScriptFile(Yii::app()->baseUrl.'/js/messages.js',CClientScript::POS_END);
 ?> 
  
             <div class="col-md-10 content-holder" id="translation">
