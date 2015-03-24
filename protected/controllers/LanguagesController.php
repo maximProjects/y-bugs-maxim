@@ -39,36 +39,17 @@ class LanguagesController extends Controller
             if(empty($curr_lng)){
                $curr_lng = $lang_prefix; 
             }
-            
-            $arrLabel = ExtLanguages::model()->getLabels($curr_lng, array('search_label' => $search));
+            $search_label = $request->getPost('search_label');  
+            $arrLabel = ExtLanguages::model()->getLabels($curr_lng, array('search_label' => $search_label));
             $this->render('trl_list',array('arrLabel' => $arrLabel,
                     'arrSelect' => $arrSelect,'lang_prefix' => $lang_prefix,'select_lng' => $curr_lng,
-                    'search_val' => $search)); 
+                    'search_val' => $search_label)); 
             
         }
       
     }//actionList
     
-    
-    
-    public function actionSearch()
-    {
-        
-        $lang_prefix = Yii::app()->language;
-        $arrSelect = ExtLanguages::model()->selectArray();  
-        
-        $request = Yii::app()->request;
-        $select_lng = $request->getPost('sel_lng');
-        $search_label = $request->getPost('serch_label');        
-        
-        $arrLabel = ExtLanguages::model()->getLabels($select_lng,array('search_label' => $search_label));
-        
-        $this->render('trl_list',array('arrLabel' => $arrLabel,
-                    'arrSelect' => $arrSelect,'lang_prefix' => $lang_prefix,'select_lng' => $select_lng,
-                    'search_val' => $search_label)); 
-        
-    }//actionSearch 
-    
+
     
       /**
      * Save translation
@@ -223,7 +204,7 @@ class LanguagesController extends Controller
         if($request->isAjaxRequest){
             
             $select_lng = $request->getPost('lng');
-            $search_label = $request->getPost('search_val');
+            $search_label = $request->getPost('search_label');
             
             $arrLabel = ExtMessage::model()->getMessagesArr($select_lng,array('search_label' => $search_label));
             $retData = $this->renderPartial('_trlMes_list',array('arrLabel' => $arrLabel,
@@ -242,34 +223,17 @@ class LanguagesController extends Controller
             if(empty($curr_lng)){
                $curr_lng = $lang_prefix; 
             }
-            
-            $arrLabel = ExtMessage::model()->getMessagesArr($curr_lng, array('search_label' => $search));
 
+            $search_label = $request->getPost('search_label');
+
+            $arrLabel = ExtMessage::model()->getMessagesArr($curr_lng, array('search_label' => $search_label));
             $this->render('trlMes_list',array('arrLabel' => $arrLabel,
                     'arrSelect' => $arrSelect,'lang_prefix' => $lang_prefix,'select_lng' => $curr_lng,
-                    'search_val' => $search)); 
+                    'search_val' => $search_label)); 
             
         }
       
     }//actionList
-
-    public function actionSearchMes()
-    {
-        
-        $lang_prefix = Yii::app()->language;
-        $arrSelect = ExtLanguages::model()->selectArray();  
-        
-        $request = Yii::app()->request;
-        $select_lng = $request->getPost('sel_lng');
-        $search_label = $request->getPost('serch_label');        
-        
-        $arrLabel = ExtMessage::model()->getMessagesArr($select_lng,array('search_label' => $search_label));
-        
-        $this->render('trlMes_list',array('arrLabel' => $arrLabel,
-                    'arrSelect' => $arrSelect,'lang_prefix' => $lang_prefix,'select_lng' => $select_lng,
-                    'search_val' => $search_label)); 
-        
-    }//actionSearch 
 
     public function actionMessages($curr_lng = null,$search = null)
     {

@@ -14,7 +14,7 @@ $cs->registerScriptFile(Yii::app()->baseUrl.'/js/trans.js',CClientScript::POS_EN
                 </div><!--tr-header  -->
                     <div class="table-holder">
                     	<div class="filters">
-                        	<form method="post" action="/<?php echo $lang_prefix?>/languages/search">
+                        	<form method="post" action="/<?php echo $lang_prefix?>/languages">
                                 <select name="sel_lng" data-prefix="<?php echo $lang_prefix?>" id="lng_sel">
                                 <?php foreach($arrSelect as $key => $value):?>
                                     <?php if($key == $select_lng):?>     
@@ -29,7 +29,7 @@ $cs->registerScriptFile(Yii::app()->baseUrl.'/js/trans.js',CClientScript::POS_EN
                                <a href="#" data-prefix="<?php echo $lang_prefix?>" class="add-label btn btn-sm btn-info">Add Label </a>
                         	
                             
-                            	<input id="search_label" type="text" name="serch_label" placeholder="serch label" value="<?php echo $search_val;?>" />
+                            	<input id="search_label" type="text" name="search_label" placeholder="search label" value="<?php echo $search_val;?>" />
                                 <button type="submit" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-search"></span>Search</button>
                             </form>
                         </div>

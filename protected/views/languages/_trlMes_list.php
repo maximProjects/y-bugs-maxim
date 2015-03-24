@@ -1,5 +1,5 @@
 <div class="filters">
-	<form method="post" action="/<?php echo $lang_prefix?>/languages/searchMes">
+	<form method="post" action="/<?php echo $lang_prefix?>/languages/messages">
         <select name="sel_lng" data-prefix="<?php echo $lang_prefix?>" id="lng_sel_mes">
         <?php foreach($arrSelect as $key => $value):?>
             <?php if($key == $select_lng):?>     
@@ -14,7 +14,7 @@
        <a href="#" data-prefix="<?php echo $lang_prefix?>" class="add-mes btn btn-sm btn-info">Add Label </a>
 	
     
-    	<input id="search_label" type="text" name="serch_label" placeholder="serch message" value="<?php echo $search_val;?>" />
+    	<input id="search_label" type="text" name="search_label" placeholder="search message" value="<?php echo $search_val;?>" />
         <button type="submit" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-search"></span>Search</button>
     </form>
 </div>

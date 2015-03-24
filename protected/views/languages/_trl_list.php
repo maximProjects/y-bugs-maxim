@@ -1,5 +1,5 @@
 	<div class="filters">
-                        	<form method="post" action="/<?php echo $lang_prefix?>/languages/search">
+                        	<form method="post" action="/<?php echo $lang_prefix?>/languages">
                                 <select name="sel_lng" data-prefix="<?php echo $lang_prefix?>" id="lng_sel">
                                 <?php foreach($arrSelect as $key => $value):?>
                                     <?php if($key == $select_lng):?>    
